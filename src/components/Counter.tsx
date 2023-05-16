@@ -1,0 +1,1 @@
+import {useState} from 'react';import css from './Counter.module.scss'export const Counter = () => {	const [count, setCount] = useState(0)			return (		<div className={css.wrap}>			<button onClick={() => setCount(prev => prev - 1)}>-</button>			<span className={css.counter}>{count}</span>			<button onClick={() => setCount(prev => prev + 1)}>+</button>		</div>	);};
